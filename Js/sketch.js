@@ -20,8 +20,8 @@ function preload()
 
   boyWalking=loadAnimation("Boy_Trans/B.png","Boy_Trans/C.png","Boy_Trans/D.png","Boy_Trans/E.png","Boy_Trans/F.png","Boy_Trans/G.png","Boy_Trans/H.png","Boy_Trans/I.png",)
   boyStanding=loadAnimation("Boy_Trans/A.png")
-  boyReverse=loadAnimation("Boy_Reverse/B.png","Boy_Reverse/C.png","Boy_Reverse/D.png","Boy_Reverse/E.png","Boy_Reverse/F.png","Boy_Reverse/G.png","Boy_Reverse/H.png","Boy_Reverse/I.png",)
-  textImage=loadImage("Images/Text.jpg")
+  //boyReverse=loadAnimation("Boy_Reverse/B.png","Boy_Reverse/C.png","Boy_Reverse/D.png","Boy_Reverse/E.png","Boy_Reverse/F.png","Boy_Reverse/G.png","Boy_Reverse/H.png","Boy_Reverse/I.png",)
+  //textImage=loadImage("Images/Text.jpg")
 }
 function setup() 
 {
