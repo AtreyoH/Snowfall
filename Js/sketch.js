@@ -7,9 +7,7 @@ var snow=[];
 var bg;
 var snowMan;
 var santa;
-var boyWalking,boyStanding,boyReverse,boy;
-var text,textImage;
-var playState="serve"
+var boyWalking,boyStanding,boy;
 
 function preload()
 {
@@ -20,8 +18,7 @@ function preload()
 
   boyWalking=loadAnimation("Boy_Trans/B.png","Boy_Trans/C.png","Boy_Trans/D.png","Boy_Trans/E.png","Boy_Trans/F.png","Boy_Trans/G.png","Boy_Trans/H.png","Boy_Trans/I.png",)
   boyStanding=loadAnimation("Boy_Trans/A.png")
-  //boyReverse=loadAnimation("Boy_Reverse/B.png","Boy_Reverse/C.png","Boy_Reverse/D.png","Boy_Reverse/E.png","Boy_Reverse/F.png","Boy_Reverse/G.png","Boy_Reverse/H.png","Boy_Reverse/I.png",)
-  //textImage=loadImage("Images/Text.jpg")
+  
 }
 function setup() 
 {
@@ -34,12 +31,8 @@ function setup()
   boy=createSprite(100,660);
   boy.addAnimation("Standing",boyStanding);
   boy.addAnimation("Walking",boyWalking);
-  boy.addAnimation("WalkingReverse",boyReverse);
   boy.scale=1.7;
   
-  /*text=createSprite(400,200)
-  text.addImage(textImage)*/
-
 }
 
 function draw() 
@@ -62,24 +55,10 @@ function draw()
     snow[j].display()
   } 
 
-  if(keyCode===32 && playState=="serve")
-  {
-    boy.changeAnimation("Walking",boyWalking)
-    boy.velocityX=4 
-    playState==="play"
-  }
-
- /* if(keyCode===68 && playState=="play")  //for D
+  if(keyCode===32)
   {
     boy.changeAnimation("Walking",boyWalking)
     boy.velocityX=4 
   }
 
-  if(keyCode===65 && playState=="play")   //for A
-  {
-    boy.changeAnimation("WalkingReverse",boyReverse)
-    boy.velocityX=-4
-  }*/
-
-  
 }
