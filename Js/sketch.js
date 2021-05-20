@@ -58,7 +58,7 @@ function draw()
   if(keyCode===32)
   {
     boy.changeAnimation("Walking",boyWalking)
-    boy.velocityX=4 
+    boy.x=boy.x+4
   }
 
 }
